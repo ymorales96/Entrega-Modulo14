@@ -1,0 +1,31 @@
+<header>
+    <h1>Centro Medico Backend</h1>
+    <div style="text-align: center;">
+        <img src="https://us.123rf.com/450wm/syawalan/syawalan1911/syawalan191100544/134264679-plantilla-de-dise%C3%B1o-de-logotipo-para-cl%C3%ADnica-hospital-centro-m%C3%A9dico-m%C3%A9dico.jpg" height="60">
+</header>
+<main>
+    <h2>Agendamiento de citas</h2>
+<div class="container-form">
+        <form method="post" action="/agregar-cita">
+            <label for="cedula">Número de cedula:</label>
+            <input type="number" id="cedula" name="cedula" required>
+            <label for="fecha_cita">Fecha de cita medica:</label>
+            <input type="date" id="fecha_cita" name="fecha_cita" required>
+            <label for="medico">Especialista:</label>
+            <select name="medico" id="medico" required>
+                <option value="">----------Seleccione una opcion-----------</option>
+                {{#each resultado}}
+                    <option value="{{cedula}}">{{nombres}} {{apellidos}}</option>
+                {{/each}}
+            </select>
+            <input type="submit" value="Enviar">
+        </form>
+<div class="boton-container">
+    <a href="../index.html"> <input type="button" value="Volver"></a>
+</div>
+</section>
+</main>
+<footer>
+    <h2>Realizado por:</h2>
+    <p>Yibel Morales Rey</p>
+</footer>

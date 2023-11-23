@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registros Pacientes</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+<body class="fondo-pacientes">
+<header>
+    <h1>Centro Medico Backend</h1>
+    <div style="text-align: center;">
+        <img src="https://us.123rf.com/450wm/syawalan/syawalan1911/syawalan191100544/134264679-plantilla-de-dise%C3%B1o-de-logotipo-para-cl%C3%ADnica-hospital-centro-m%C3%A9dico-m%C3%A9dico.jpg" height="60">
+</header>
+<main>
+    <h2>Registros de pacientes</h2>
+<section class="formulario">
+<form method="post" action="/agregar-paciente">
+    <label for="nombres">Nombres</label>
+    <input class=datos-form type="text" id="nombres" name="nombres" placeholder="Nombres" required>
+    <label for="apellidos">Apellidos</label>
+    <input class="datos-form" type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+    <label for="">Número de Cédula</label>
+    <input type="number" name="cedula" id="cedula" placeholder="Número de identificación" required>
+    <label for="fecha_nacimiento">fecha de nacimiento</label>
+    <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" placeholder="fecha de nacimiento" required>
+    <label for="">Teléfono</label>
+    <input type="tel" name="telefono" id="telefono" placeholder="Celular o Teléfono" required>
+    <input type="submit" value="Enviar"> 
+</form>
+<div class="boton-container">
+    <a href="../index.html"> <input type="button" value="Volver"></a>
+</div>
+</section>
+</main>
+<footer>
+    <h2>Realizado por:</h2>
+    <p>Yibel Morales Rey</p>
+</footer>
+</body>
+</html>

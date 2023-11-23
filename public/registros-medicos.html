@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registros medicos</title>
+    <link rel="stylesheet" href="./stylesheets/style.css"> 
+</head>
+    <header>
+        <h1>Centro Medico Backend</h1>
+        <div style="text-align: center;">
+            <img src="https://us.123rf.com/450wm/syawalan/syawalan1911/syawalan191100544/134264679-plantilla-de-dise%C3%B1o-de-logotipo-para-cl%C3%ADnica-hospital-centro-m%C3%A9dico-m%C3%A9dico.jpg" height="60">
+    </header>
+    <main>
+        <h2>Registros Médicos</h2>
+    <body class="fondo-medicos">
+    <section class="formulario">
+    <form method="post"action="/agregar-medico">
+        <label for="nombres">Nombres</label>
+        <input type="text"  id="nombres" name="nombres" placeholder="Nombres"required>
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos"required>
+        <label for="cedula">Número de Cédula</label>
+        <input type="number" id="cedula" name="cedula" placeholder="Documento de identidad"required>
+        <label for="Consultorio">Consultorio</label>
+        <input type="number" id="consultorio" name="consultorio" placeholder="Número de consultorio" required>
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono"placeholder="Celular o Teléfono" required>
+        <label for="correo">Correo Electrónico</label>
+        <input type="email" id="correo" name="correo"placeholder="correo electrónico" required>
+        <label for="especialidad">Especialidad</label>
+        <select name="especialidad" id="especialidad">
+            <option value="">--------------Selecione la especialidad------------------</option>
+            <option value="Medicina General">Medicina General</option>
+            <option value="Cardiología">Cardiología</option>
+            <option value="Medicina Interna">Medicina Interna</option>
+            <option value="Dermatología">Dermatología</option>
+            <option value="Rehabilitación fisíca">Rehabilitación fisíca</option>
+            <option value="Psicología">Psicología</option>
+            <option value="Odontología">Odontología</option>
+            <option value="Radiología">Radiología</option>
+        </select>
+        <input type="submit" value="Enviar"> 
+    </form>
+    <div class="boton-container">
+        <a href="../index.html"> <input type="button" value="Volver"></a>
+    </div>
+    </section>
+</main>
+<footer>
+    <h2>Realizado por:</h2>
+    <p>Yibel Morales Rey</p>
+</footer>
+</body>
+</html>

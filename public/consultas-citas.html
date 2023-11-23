@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas especialidades</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body class="fondo-citas">
+    <header>
+        <h1>Centro médico Backend</h1>
+        <div style="text-align: center;">
+            <img src="https://us.123rf.com/450wm/syawalan/syawalan1911/syawalan191100544/134264679-plantilla-de-dise%C3%B1o-de-logotipo-para-cl%C3%ADnica-hospital-centro-m%C3%A9dico-m%C3%A9dico.jpg" height="60">
+    </header>
+    <main>
+        <h2>Consulta de citas medicas</h2>
+        <div class="container-form">
+            <form method="post" action="/consulta-cita">
+                <label for="especialidad">Especialidad:</label>
+                <select name="especialidad" id="especialidad" required>
+                    <option value="">----------Seleccione una opcion-----------</option>
+                    <option value="Medicina general">Medicina general</option>
+                    <option value="Cardiología">Cardiología</option>
+                    <option value="Medicina interna">Medicina interna</option>
+                    <option value="Dermatología">Dermatología</option>
+                    <option value="Rehabilitación física">Rehabilitación física</option>
+                    <option value="Psicología">Psicología</option>
+                    <option value="Odontología">Odontología</option>
+                    <option value="Radiología">Radiología</option>
+                </select>
+                <input type="submit" value="Consultar">
+            </form>
+            <a href="../index.html"><input type="button" value="Volver"></a>
+        </div>
+    </main>
+</body>
+</html>
